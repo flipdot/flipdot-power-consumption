@@ -1,18 +1,23 @@
 <html>
   <head>
     <style>
+      html {
+        margin: 0;
+        padding: 0;
+        display: block;
+      }
+
       button {
         border: 0;
         width: 200px;
         height: 150px;
         font-size: 2em;
+        margin: 5px;
       }
     </style>
   </head>
   <body>
-    <button onclick="switchProfile('home')">switch to home</button>
-    <button onclick="switchProfile('power')">switch to power</button>
-
+    <div id="buttons"></div>
     <script type="text/javascript" src="/hackerDS/js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>

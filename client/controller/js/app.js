@@ -4,6 +4,7 @@ function switchProfile(profile) {
 
 hackerDS.server.send('getSettings');
 hackerDS.on('onSettings', function(urls){
+  if(window.urls) return;
   window.urls = urls;
   delete window.urls.default;
   loadProfiles(Object.keys(window.urls));
